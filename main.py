@@ -18,16 +18,26 @@ time.sleep(3)
 
 
 inputUsuario = navegador.find_element(by=By.ID,value="username")
+<<<<<<< HEAD
 inputUsuario.send_keys("sophia.coelho")
 time.sleep(3)
 
 inputSenha = navegador.find_element(by=By.ID,value="password")
 inputSenha.send_keys("S0PH14@pires")
 time.sleep(3)
+=======
+inputUsuario.send_keys("Usuario")
+time.sleep(2)
+
+inputSenha = navegador.find_element(by=By.ID,value="password")
+inputSenha.send_keys("Senha")
+time.sleep(2)
+>>>>>>> 4bb47079b5aba009cfdb2fe5b1a0d6f693fd2c5f
 
 buttonLogin = navegador.find_element(by=By.ID,value="kc-login")
 buttonLogin.click()
 time.sleep(3)
+<<<<<<< HEAD
 
 
 ## Erro corrigir
@@ -67,3 +77,5 @@ time.sleep(5)
 ##inputD1 = navegador.find_element(by=By.ID,value=":rf:")
 ##inputD1.send_keys("07/11/2023")
 ##time.sleep(10)
+=======
+>>>>>>> 4bb47079b5aba009cfdb2fe5b1a0d6f693fd2c5f
