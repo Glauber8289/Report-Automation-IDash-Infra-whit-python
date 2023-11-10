@@ -28,11 +28,11 @@ time.sleep(3)
 
 inputUsuario = navegador.find_element(by=By.ID,value="username")
 
-inputUsuario.send_keys("sophia.coelho")
+inputUsuario.send_keys("username")
 time.sleep(5)
 
 inputSenha = navegador.find_element(by=By.ID,value="password")
-inputSenha.send_keys("S0PH14@pires")
+inputSenha.send_keys("password")
 time.sleep(5)
 
 
