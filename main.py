@@ -29,7 +29,7 @@ time.sleep(3)
 ##Inserindo usuario
 inputUsuario = navegador.find_element(by=By.ID,value="username")
 <<<<<<< HEAD
-inputUsuario.send_keys("sophia.coelho")
+inputUsuario.send_keys("******")
 =======
 
 inputUsuario.send_keys("username")
