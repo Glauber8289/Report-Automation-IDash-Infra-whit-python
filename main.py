@@ -22,23 +22,18 @@ options.headless = False #Excutar de forma visivel
 navegador = webdriver.Chrome(options=options)
 
 ##Link para acessar o site
-link= "https://idash.ifcshop.net/auth/realms/chat-bot-b2b/protocol/openid-connect/auth?client_id=chat-bot-b2b-app&redirect_uri=https%3A%2F%2Fidash.ifcshop.net%2F&state=7d3ac4d3-a588-4efe-acbd-8689666c8530&response_mode=fragment&response_type=code&scope=openid&nonce=ef238d2a-f304-4122-84b9-137299ed11ed"
+link= "https://idash.ifcshop.net/auth/realms/chat-bot-b2b/protocol/openid-connect/auth?client_id=chat-bot-b2b-app&redirect_uri=https%3A%2F%2Fidash.ifcshop.net%2Freports%2Fattendance-quality&state=1a486ee2-1410-4ae0-887a-6220d195130b&response_mode=fragment&response_type=code&scope=openid&nonce=c559ad80-4974-4ef3-b331-5cc14bd83daa"
 navegador.get(url=link)
 time.sleep(3)
 
 ##Inserindo usuario
 inputUsuario = navegador.find_element(by=By.ID,value="username")
-<<<<<<< HEAD
 inputUsuario.send_keys("sophia.coelho")
-=======
-
-inputUsuario.send_keys("username")
->>>>>>> a31ed97523f082d80034b19087f9618cac602fda
 time.sleep(5)
 
 ##Inserindo senha
 inputSenha = navegador.find_element(by=By.ID,value="password")
-inputSenha.send_keys("password")
+inputSenha.send_keys("S0PH14@pires")
 time.sleep(5)
 
 ##Clicando no botão Sign In
@@ -75,7 +70,7 @@ GerarRelatorio = navegador.find_element(By.CSS_SELECTOR,value= '#root > div > ma
 ActionChains(navegador)\
 .click(GerarRelatorio)\
 .perform()
-time.sleep(10)
+time.sleep(200)
 
 
 ##Acessando a pagina Retenção    
@@ -91,7 +86,7 @@ ActionChains(navegador)\
 time.sleep(10)
 
 ##Preenchendo data anterior Retenção
-text_input1 = navegador.find_element(By.CSS_SELECTOR, "#root > div > main > div.MuiContainer-root.css-10ur324 > div.MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-2.css-isbt42 > div:nth-child(3) > div > div")
+text_input1 = navegador.find_element(By.CSS_SELECTOR,value= "#root > div > main > div.MuiContainer-root.css-10ur324 > div.MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-2.css-isbt42 > div:nth-child(3) > div > div")
 ActionChains(navegador)\
 .send_keys_to_element(text_input1, data_ant_form)\
 .perform()
@@ -102,7 +97,7 @@ GerarRelatorio1 = navegador.find_element(By.CSS_SELECTOR,value= '#root > div > m
 ActionChains(navegador)\
 .click(GerarRelatorio1)\
 .perform()
-time.sleep(15)
+time.sleep(200)
 
 ##Acessando a pagina Tickets    
 linkT="https://idash.ifcshop.net/reports/tickets"
@@ -117,7 +112,7 @@ ActionChains(navegador)\
 time.sleep(10)
 
 ##Preenchendo data anterior Tickets
-text_input2 = navegador.find_element(By.CSS_SELECTOR, "#root > div > main > div.MuiContainer-root.css-10ur324 > div.MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-2.css-isbt42 > div:nth-child(3) > div > div")
+text_input2 = navegador.find_element(By.CSS_SELECTOR,value= "#root > div > main > div.MuiContainer-root.css-10ur324 > div.MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-2.css-isbt42 > div:nth-child(3) > div > div")
 ActionChains(navegador)\
 .send_keys_to_element(text_input2, data_ant_form)\
 .perform()
@@ -128,4 +123,4 @@ GerarRelatorio2 = navegador.find_element(By.CSS_SELECTOR,value= '#root > div > m
 ActionChains(navegador)\
 .click(GerarRelatorio2)\
 .perform()
-time.sleep(15)
+time.sleep(300)
