@@ -14,6 +14,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from datetime import datetime, timedelta
+import shutil
+import os
 
 options = Options()
 options.headless = False #Excutar de forma visivel
@@ -70,9 +72,16 @@ GerarRelatorio = navegador.find_element(By.CSS_SELECTOR,value= '#root > div > ma
 ActionChains(navegador)\
 .click(GerarRelatorio)\
 .perform()
-time.sleep(200)
+time.sleep(20)
 
-
+##mover arquivo
+download_dir = r'C:\Users\Peter\Downloads'
+qt=os.listdir(download_dir)
+arquivo_mais_recente = max(qt, key=lambda f: os.path.getctime(os.path.join(download_dir, f)))
+CaminhoArquivo = os.path.join(download_dir,arquivo_mais_recente)
+pasta_destino= r'C:\Users\Peter\TA'
+shutil.move(CaminhoArquivo,os.path.join(pasta_destino,arquivo_mais_recente))
+time.sleep(10)
 ##Acessando a pagina Retenção    
 linkR="https://idash.ifcshop.net/reports/subject"
 navegador.get(url=linkR)
@@ -97,7 +106,16 @@ GerarRelatorio1 = navegador.find_element(By.CSS_SELECTOR,value= '#root > div > m
 ActionChains(navegador)\
 .click(GerarRelatorio1)\
 .perform()
-time.sleep(200)
+time.sleep(35)
+
+##mover arquivo
+download_dir = r'C:\Users\Peter\Downloads'
+qt1=os.listdir(download_dir)
+arquivo_mais_recente = max(qt1, key=lambda f: os.path.getctime(os.path.join(download_dir, f)))
+CaminhoArquivo = os.path.join(download_dir,arquivo_mais_recente)
+pasta_destino1= r'C:\Users\Peter\TA1'
+shutil.move(CaminhoArquivo,os.path.join(pasta_destino1,arquivo_mais_recente))
+time.sleep(10)
 
 ##Acessando a pagina Tickets    
 linkT="https://idash.ifcshop.net/reports/tickets"
@@ -123,4 +141,14 @@ GerarRelatorio2 = navegador.find_element(By.CSS_SELECTOR,value= '#root > div > m
 ActionChains(navegador)\
 .click(GerarRelatorio2)\
 .perform()
-time.sleep(300)
+time.sleep(50)
+
+##mover arquivo
+download_dir = r'C:\Users\Peter\Downloads'
+qt2=os.listdir(download_dir)
+arquivo_mais_recente = max(qt2, key=lambda f: os.path.getctime(os.path.join(download_dir, f)))
+CaminhoArquivo = os.path.join(download_dir,arquivo_mais_recente)
+pasta_destino2= r'C:\Users\Peter\TA2'
+shutil.move(CaminhoArquivo,os.path.join(pasta_destino2,arquivo_mais_recente))
+time.sleep(10)
+
