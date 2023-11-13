@@ -1,4 +1,8 @@
 # Report-Automation-IDash-Infra-whit-python
+
+
+https://github.com/Glauber8289/Report-Automation-IDash-Infra-whit-python/assets/107453279/29617cf0-b093-4158-9f2e-c5cee28bc639
+
 Automatizando processos de extrações de relatorios
 
 Olá pessoal tudo bem ?  a muito tempo trabalho na area de planejamento e na area de dados, sempre achei o processo de extrair relatórios algo bem trabalhoso, e algo que de certa forma toma um tempo de nós analistas como um todo para realizarmos outras atividades como por exemplo realizar uma analise mais precisa,ou montar aquela dash mais bonita, entre outras atividades que poderiamos fazer nesse tempo dedicado a extração de relatorios.
