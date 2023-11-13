@@ -30,12 +30,12 @@ time.sleep(3)
 
 ##Inserindo usuario
 inputUsuario = navegador.find_element(by=By.ID,value="username")
-inputUsuario.send_keys("sophia.coelho")
+inputUsuario.send_keys("********")
 time.sleep(5)
 
 ##Inserindo senha
 inputSenha = navegador.find_element(by=By.ID,value="password")
-inputSenha.send_keys("S0PH14@pires")
+inputSenha.send_keys("******")
 time.sleep(5)
 
 ##Clicando no botão Sign In
