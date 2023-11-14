@@ -22,6 +22,7 @@ Porém como nem tudo são flores, tive algumas dificuldades problemas no meio do
 
 5º Clicar no botão para gerar o relatório.
 
+6ª Direcionar os Downloads para suas respectivas pastas.
 
 Pessoal este e um resumo bem simples das etapas do projeto, dentro de cada etapa tem varias SubEtapas, mas todas etapas estão bem separadas e comentadas no projeto sobre o que cada comando faz.
 
