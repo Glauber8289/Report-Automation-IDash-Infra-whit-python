@@ -23,7 +23,7 @@ def execute_script():
  
  
  options = Options()
- options.headless = False #Excutar de forma visivel
+ options.headless = False #Excutar de forma      visivel
 
 ##Acessando o navegador
  navegador = webdriver.Chrome(options=options)
@@ -34,7 +34,6 @@ def execute_script():
  time.sleep(3)
 
 ##Inserindo usuario
-<<<<<<< HEAD
  inputUsuario = navegador.find_element(by=By.ID,value="username")
  inputUsuario.send_keys("******")
  time.sleep(5)
