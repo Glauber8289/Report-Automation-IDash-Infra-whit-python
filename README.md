@@ -22,6 +22,7 @@ Porém como nem tudo são flores, tive algumas dificuldades problemas no meio do
 
 5º Clicar no botão para gerar o relatório.
 
+6ª Direcionar os Downloads para suas respectivas pastas.
 
 Pessoal este e um resumo bem simples das etapas do projeto, dentro de cada etapa tem varias SubEtapas, mas todas etapas estão bem separadas e comentadas no projeto sobre o que cada comando faz.
 
@@ -36,8 +37,5 @@ https://docs.python.org/3/
 
 # Video com uma pequena demonstração da ação de Extração sendo realizada pelo Boot:
 
-https://github.com/Glauber8289/Report-Automation-IDash-Infra-whit-python/assets/107453279/29617cf0-b093-4158-9f2e-c5cee28bc639
-
-
-
+https://github.com/Glauber8289/Report-Automation-IDash-Infra-whit-python/assets/107453279/62a6bbe1-3409-4f23-85f1-0ac358ff136e
 
