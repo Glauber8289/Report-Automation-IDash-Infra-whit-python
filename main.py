@@ -36,23 +36,14 @@ def execute_script():
 ##Inserindo usuario
 <<<<<<< HEAD
  inputUsuario = navegador.find_element(by=By.ID,value="username")
- inputUsuario.send_keys("sophia.coelho")
+ inputUsuario.send_keys("******")
  time.sleep(5)
 
-##Inserindo senha
- inputSenha = navegador.find_element(by=By.ID,value="password")
- inputSenha.send_keys("S0PH14@pires")
- time.sleep(5)
-=======
-inputUsuario = navegador.find_element(by=By.ID,value="username")
-inputUsuario.send_keys("********")
-time.sleep(5)
 
 ##Inserindo senha
 inputSenha = navegador.find_element(by=By.ID,value="password")
 inputSenha.send_keys("******")
 time.sleep(5)
->>>>>>> c1e9a20c444669f687ee94d4e56514a8f7da5ad4
 
 ##Clicando no botão Sign In
  buttonLogin = navegador.find_element(by=By.ID,value="kc-login")
